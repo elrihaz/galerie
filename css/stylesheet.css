@@ -1,0 +1,40 @@
+html,
+body,
+header,
+section,
+div,
+#banniere,
+.row,
+figure,
+iframe,
+img,
+footer,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+
+/***************************PHOTOSWIPE****************************************/
+.my-gallery {
+  width: 100%;
+  float: left;
+}
+.my-gallery img {
+  width: 100%;
+  height: auto;
+}
+.my-gallery figure {
+  display: block;
+  float: left;
+  margin: 0 5px 5px 0;
+  width: 150px;
+}
+.my-gallery figcaption {
+  display: none;
+}
