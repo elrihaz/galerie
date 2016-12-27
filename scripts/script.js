@@ -1,6 +1,18 @@
+////////////////////jquery document ready//////////////////////////////
+
 $(document).ready(function () {
 
-  var initPhotoSwipeFromDOM = function(gallerySelector) {
+// Par défaut : affiche la page d'accueil ds le div "main"
+  $("#main").load("html/accueil.html");
+
+});
+
+
+////////////////////fonction gallerie///////////////////////////////
+
+var galerie = function() {
+
+   var initPhotoSwipeFromDOM = function(gallerySelector) {
 
     // parse slide data (url, title, size ...) from DOM elements
     // (children of gallerySelector)
@@ -205,20 +217,5 @@ $(document).ready(function () {
 
 // execute above function
 initPhotoSwipeFromDOM('.my-gallery');
-
-$('body').append("<p>Ouaip document.ready exécuté</p>");
-
-
-});
-
-
-
-
-window.onload = function() {
-
-  // Par défaut : affiche la page d'accueil ds le div "main"
-  $("#main").load("html/accueil.html");
-
-  $('body').append("<p>Ouaip window.onload exécuté</p>");
 
 }
